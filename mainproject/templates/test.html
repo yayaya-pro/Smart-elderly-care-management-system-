@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>地图管理</title>
+</head>
+<body>
+{% extends 'xadmin/base_site.html' %}
+
+{% block content %}
+
+<div style="margin: 0% 0%;">
+    <form action="/login_test/" method="post">
+       {% csrf_token %}
+
+        <ul>
+
+    <li><img src="/static/image/map.jpg"/></li>
+        </ul>
+
+
+</div>
+
+
+{% endblock %}
+</body>
+
+</html>

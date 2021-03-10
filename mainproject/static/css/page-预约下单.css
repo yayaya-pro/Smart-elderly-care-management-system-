@@ -1,0 +1,152 @@
+*{
+			   margin: 0;
+			   padding: 0;
+			   }
+			   /*
+			   设置ul
+			   */
+			body{
+				  background-color: #F3F7FA;
+				  font: 15px/1 微软雅黑;
+				  
+			  }
+	
+			
+			
+			  .main{
+				  /*去除项目符号*/
+				  list-style: none;
+             background-color:#033A89;
+             background-image: url(image/5.png);
+             background-repeat: repeat-x;
+				 width:100%;
+				 
+				  /*设置元素居中*/
+			
+			
+				  
+				  /*解决高度塌陷*/
+				  overflow: auto;
+				  float: right;
+				  
+				 line-height: 48px;
+			  }
+			  /*设置li*/
+			  .main li{
+				  
+				  /*设置li向左浮动*/
+				 float: left;
+				  /*为li指定宽度*/
+				  width:16.66666666666666666666%;
+				  
+				  
+				  
+			  }
+			  .main a{
+				  /*将a转换为块元素*/
+				  display:block;
+				  /*为a指定一个宽度*/
+				  width: 100%;
+				  /*设置文字居中*/
+				  text-align: center;
+				  /*设置一个内边距*/
+				  padding: 3px 0;
+				  /*去除下划线*/
+				  text-decoration: none;
+				  /*设置字体颜色*/
+				  color: #F3F7FA ;
+				  /*设置加粗*/
+				  font-weight: bolder;
+				  
+			  }
+			  /*设置a的鼠标移入的效果*/
+			  .main a:hover{
+				  background-color: #FF6600;
+			  }
+			  .logo{
+				  
+				 
+				  
+				  margin-left: 45px;
+				  float: left;
+			  }
+              .current{
+				  font: bold  50px "隶书" ;
+			  }
+
+             .p4{
+                 
+				 
+				 list-style: none;
+				 color: black;
+				 font: bold  50px "隶书" ;
+				position: relative;
+				left: 280px;
+				top: 200px;
+		          
+				
+				
+			
+				 
+			 }
+			  .p4 a{
+				   text-decoration: none;
+				   padding-right: 100px;
+				   padding-bottom:100px ;
+				  
+				  
+			  }
+	
+			  .p4 a:hover{
+				  color:#FF6600 ;
+			  }
+			.p5{
+			     
+				 
+				 list-style: none;
+				 color: black;
+				 font: bold  50px "隶书" ;
+			
+					position: relative;
+					left: 200px;
+					top: 200px;
+				
+			
+				 
+			 }
+			  .p5 a{
+				   text-decoration: none;
+				   padding-right: 100px;
+				   padding-bottom:100px ;
+				   				  
+				  
+				  
+			  }
+			.p5 a:hover{
+							  color:#FF6600 ;
+			}
+			.p6{
+			     
+				
+				 list-style: none;
+				 color: black;
+				 font: bold  50px "隶书" ;
+			
+					position: relative;
+					left: 200px;
+					top: 200px;
+				
+			
+				 
+			 }
+			  .p6 a{
+				   text-decoration: none;
+				   padding-right: 100px;
+				   padding-bottom:200px ;
+				   				  
+				  
+				  
+			  }
+			.p6 a:hover{
+							  color:#FF6600 ;
+			}

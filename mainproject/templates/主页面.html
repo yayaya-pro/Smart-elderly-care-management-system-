@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>主页面</title>
+		<style type="text/css">
+			/*
+			清楚默认样式
+			*/
+		   *{
+			   margin: 0;
+			   padding: 0;
+			   }
+			   /*
+			   设置ul
+			   */
+			  body{
+				  background-color: #F3F7FA;
+				  font: 15px/1 微软雅黑;
+			  }
+			 
+
+			
+			  .main{
+				  /*去除项目符号*/
+				  list-style: none;
+				  /*为ul设置背景颜色*/
+				  background-color:#033A89;
+
+				  /*设置宽度也会默认开启haslayout
+				  在IE6，中如果指定宽度
+				  */
+				 width:100%;
+				 
+				  /*设置元素居中*/
+				  margin:0 auto ;
+				  
+				  /*解决高度塌陷*/
+				  overflow: auto;
+				  line-height: 48px;
+			  }
+			  /*设置li*/
+			  .main li{
+				  
+				  /*设置li向左浮动*/
+				 float: left;
+				  /*为li指定宽度*/
+				  width:16.6666666666666666666666666666666666%;
+				  
+				  
+				  
+			  }
+			  .main a{
+				  /*将a转换为块元素*/
+				  display:block;
+				  /*为a指定一个宽度*/
+				  width: 100%;
+				  /*设置文字居中*/
+				  text-align: center;
+				  /*设置一个内边距*/
+				  padding: 3px 0;
+				  /*去除下划线*/
+				  text-decoration: none;
+				  /*设置字体颜色*/
+				  color:#F3F7FA ;
+				  /*设置加粗*/
+				  font-weight: bolder;
+				  
+			  }
+			  /*设置a的鼠标移入的效果*/
+			  .main a:hover{
+				  background-color: #FF6600;
+			  }
+			  .logo{
+				  
+				  
+				  
+				  margin-left: 45px;
+				  float: left;
+				  margin-bottom: 16px;
+			  }
+	        .box2{
+				font:  bold  20px "隶书" ;
+				
+				margin-left: 100px;
+				
+				float: left;
+			}
+			.box5{
+				float: right;
+				margin-top: 150px;
+				margin-right: 1px;
+			}
+			
+		
+			}
+  
+	       
+			.p1{
+				 font:bold  50px "隶书" ;
+			}
+		     .p2{
+		     				  /*去除项目符号*/
+		     				  list-style: none;
+		     				  /*为ul设置背景颜色*/
+		     				  
+		     				  /*设置宽度也会默认开启haslayout
+		     				  在IE6，中如果指定宽度
+		     				  */
+		     				 width:800px;
+		     				 
+		     				  /*设置元素居中*/
+		     				  margin:10px 100px 0px 0px;
+		     				  
+		     				  /*解决高度塌陷*/
+		     				  overflow: hidden;
+							  float: right;
+		     }
+		     /*设置li*/
+		     .p2 li{
+		     				  
+		     				  /*设置li向左浮动*/
+		     				 float: left;
+		     				  /*为li指定宽度*/
+		     				  width:20%;
+		     				  
+		     				  
+		     				  
+		     }
+		     .p2 a{
+		     				  /*将a转换为块元素*/
+		     				  display:block;
+		     				  /*为a指定一个宽度*/
+		     				  width: 100%;
+		     				  /*设置文字居中*/
+		     				  text-align: center;
+		     				  /*设置一个内边距*/
+		     				  
+		     				  /*去除下划线*/
+		     				  text-decoration: none;
+		     				  /*设置字体颜色*/
+		     				  color: #033A89;
+		     				  /*设置加粗*/
+		     				  font-weight: bolder;
+		     }
+		     /*设置a的鼠标移入的效果*/
+
+			 .p2 a:hover{
+				 color:#FF6600;
+			 }
+			 .logo2{
+				 
+				 margin-left:90px;
+				 float: left;
+				 
+			 }
+			 #p1{
+				 color: #000000;
+				 font-size: 13px;
+				 float: right;
+				 margin-right: 415px;
+			
+				 
+			 }
+		
+			 #p1 a{
+				 list-style: none;
+				 text-decoration: none;
+			 }
+			 #p1 a:hover{
+				 color:#FF6600;
+			 }
+			
+              #p4{
+				   position: relative;
+				   right: 8px;
+			  }
+
+			  #p5{
+			  				   position: relative;
+			  				   right: 8px;
+			  }
+		</style>
+	</head>
+	<body>
+		
+		<div class="logo">
+			<img src="../static/image/logo1.png" alt="云晖logo" width="100px" />
+		</div>
+
+	
+		
+		
+		<!-- 
+		创建导航条的结构
+		-->
+		
+		<ul class="main">
+			<li><a href="/主页面/">主页</a></li>
+			<li><a href="/关于我们/">关于我们</a></li>
+			<li><a href="#">联系我们</a></li>
+			<li><a href="/预约下单/">预约下单</a></li>
+			<li><a href="/xadmin">后台管理</a></li>
+			<li><a href="/登录/">登录/注册</a></li>
+			
+
+			
+		</ul>
+		
+		<div class="box4">
+			<img src="../static/image/Chatu6.png" alt="海报" width="100%">
+		</div>
+		<!--
+		<div class="box2">老人安心</div>
+		<div class="box3">&nbsp;&nbsp;家人放心</div>
+		-->
+		<div class="box2"><img src="../static/image/老人.png" alt="老人" width="500px">
+		<div class="box5">
+		<p>发白如雪,那是岁月沧桑洒下的鲜花  </p>
+		<br/>
+		<p>弯躯是弓,那是时间老人积蓄的力量</p>
+		<br/>
+		<p>人间的甘甜有十分,您只尝了三分</p>
+		<br/>
+		<p>生活的苦涩有三分,您却持了十分</p>
+		<br/>
+		<p>在您的余生中,想想我们可以做的还很多</p>
+		<br/>
+		<p>递上一杯热茶,为您撑起一把生活的伞</p>
+		<br/>
+		<p class="p1">余生,我们用心来陪!</p>
+		<br/>
+		<p class="p1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用爱呵护!</p>
+		</div>
+		</div>
+	    <div>
+			<div class="logo2">
+				<img src="../static/image/logo1.png" alt="云晖logo" width="200px" />
+			
+			
+				<ul class="p2">
+					<li><a href="/主页面/">主页</a></li>
+					<li><a href="/关于我们/">关于我们</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="/预约下单/">预约下单</a></li>
+						
+					<li><a href="/xadmin">后台管理</a></li>
+				
+						</ul>
+					
+				
+			
+				
+				<div style="width:950px; border:0.5px solid black;margin-left: auto ;" ></div>
+				<p id="p1"><a href="#">加入我们</a>|<a href="/免责声明/">免责声明</a>|<a href="#">隐私政策</a></p>
+			</div>
+		</div>
+          
+		
+	</body>
+</html>

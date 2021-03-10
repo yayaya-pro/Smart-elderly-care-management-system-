@@ -1,0 +1,286 @@
+*{
+			   margin: 0;
+			   padding: 0;
+			   }
+			   /*
+			   设置ul
+			   */
+			body{
+				  background-color: #F3F7FA;
+				  font: 15px/1 微软雅黑;
+				  
+			  }
+	
+			
+			
+			  .main{
+				  /*去除项目符号*/
+				  list-style: none;
+                  background-color:#033A89;
+                  background-image: url(image/5.png);
+                  background-repeat: repeat-x;
+				 width:100%;
+				 
+				  /*设置元素居中*/
+				  margin:0 auto ;
+				  
+				  /*解决高度塌陷*/
+				  overflow: auto;
+				  line-height: 48px;
+			  }
+			  /*设置li*/
+			  .main li{
+				  
+				  /*设置li向左浮动*/
+				 float: left;
+				  /*为li指定宽度*/
+				  width:16.666666666666666666666666666666666666%;
+				  
+				  
+				  
+			  }
+			  .main a{
+				  /*将a转换为块元素*/
+				  display:block;
+				  /*为a指定一个宽度*/
+				  width: 100%;
+				  /*设置文字居中*/
+				  text-align: center;
+				  /*设置一个内边距*/
+				  padding: 3px 0;
+				  /*去除下划线*/
+				  text-decoration: none;
+				  /*设置字体颜色*/
+				  color:#F3F7FA ;
+				  /*设置加粗*/
+				  font-weight: bolder;
+				  
+			  }
+			  /*设置a的鼠标移入的效果*/
+			  .main a:hover{
+				  background-color: #FF6600;
+			  }
+			  .logo{
+				  
+				  
+				  
+				  margin-left: 45px;
+				  float: left;
+				  margin-bottom: 16px;
+			  }
+
+
+		
+
+	       
+			
+		     .p2{
+		     				  /*去除项目符号*/
+		     				  list-style: none;
+		     				  /*为ul设置背景颜色*/
+		     				  
+		     				  /*设置宽度也会默认开启haslayout
+		     				  在IE6，中如果指定宽度
+		     				  */
+		     				 width:800px;
+		     				 
+		     				  /*设置元素居中*/
+		     				  margin:10px 100px 0px 0px;
+		     				  
+		     				  /*解决高度塌陷*/
+		     				  overflow: hidden;
+							  float: right;
+		     }
+		     /*设置li*/
+		     .p2 li{
+		     				  
+		     				  /*设置li向左浮动*/
+		     				 float: left;
+		     				  /*为li指定宽度*/
+		     				  width:20%;
+		     				  
+		     				  
+		     				  
+		     }
+		     .p2 a{
+		     				  /*将a转换为块元素*/
+		     				  display:block;
+		     				  /*为a指定一个宽度*/
+		     				  width: 100%;
+		     				  /*设置文字居中*/
+		     				  text-align: center;
+		     				  /*设置一个内边距*/
+		     				  
+		     				  /*去除下划线*/
+		     				  text-decoration: none;
+		     				  /*设置字体颜色*/
+		     				  color: #033A89;
+		     				  /*设置加粗*/
+		     				  font-weight: bolder;
+		     }
+		     /*设置a的鼠标移入的效果*/
+
+			 .p2 a:hover{
+				 color:#FF6600;
+			 }
+			 .logo2{
+				 
+				 margin-left:90px;
+				 float: left;
+				 
+			 }
+			 #p1{
+				 color: #000000;
+				 font-size: 13px;
+				 float: right;
+				 margin-right: 415px;
+			
+				 
+			 }
+		
+			 #p1 a{
+				 list-style: none;
+				 text-decoration: none;
+			 }
+			 #p1 a:hover{
+				 color:#FF6600;
+			 }
+              #p4{
+				   position: relative;
+				   right: 8px;
+			  }
+			  #p5{
+			  				   position: relative;
+			  				   right: 8px;
+			  }
+			  .p6{
+				  margin-right: auto;
+				  width: 800px;
+				  color: #7794B0;
+			  }
+			  .p8{
+				 
+				 font: bold  50px "隶书" ;
+				  margin-left: 100px;
+				  margin-top: 50px;
+				  margin-bottom: 10px;
+				  
+			  }
+			  .p7{
+				  width: 400px;
+				  position: relative;
+				 left:750px;
+				 top:100px;
+				font-size: 20px;
+			  
+			  }
+			 .p3{ width: 720px;
+			  height: 620px ;
+			  margin: 0 auto;
+			  background-color: #F3F7FA;
+			  background-image: url(../image/23.png);
+			  background-repeat: no-repeat;
+			  }
+			  .p4{
+				  margin-bottom: 0px;
+				  padding-bottom: 0px;
+				  position: relative;
+				  left: 120px;
+				  top:115px;
+				  
+			  }
+			  .p5{
+				  margin-bottom: 0px;
+				  padding-bottom: 0px;
+				  position: relative;
+				  left: 120px;
+				  top:115px;
+			  
+			  }
+			  .p9{
+				  margin-top: 45px;
+				  margin-left: 420px;
+				  font-size: 40px;
+				  font-weight: bolder;
+			  }
+               .p10{
+				    font: bold  50px "隶书" ;
+				   margin-left: 100px;
+				   margin-top: 200px;
+				   margin-bottom: 10px;
+			   }
+			   .p11{
+				   font: bold  50px "隶书" ;
+				   margin-left: 100px;
+				   margin-top: 50px;
+				   margin-bottom: 70px;
+			   }
+		
+			   .p13{
+				   
+				   margin-left: 325px;
+				   color: #7794B0;
+				   font-size: 20px;
+				   width: 550px;
+			
+				   
+			   }
+			   .p14{
+				   margin-left: 125px;
+				  
+			   }
+			   
+		       .p15{
+
+				   font-size: 30px;
+				    color: white;
+				   margin-left: 150px;
+				   position: relative;
+				   bottom:160px;
+				   left: 25px;
+				   
+			   }
+			   .p13{
+				   height: 250px;
+				   background-color: #F3F7FA ;
+				   background-image: url(../image/logo3.png);
+				   background-repeat: no-repeat;
+				   background-position: 50px -25px;
+			   }
+			   .p17{
+				   margin-left: 220px;
+				   color: #7794B0;
+				   font-size: 20px;
+				   width: 800px;
+				   height: 220px;
+				   background-color: #F3F7FA ;
+				   background-image: url(../image/logo3.png);
+				   background-repeat: no-repeat;
+				   background-position: 120px -25px;
+				   			
+			   }
+		    .p16{
+				float: left;
+				margin-left: 225px;
+				
+			}
+			.p18{
+				
+				 font: bold  30px "隶书" ;
+				 margin-top: 450px;
+				 margin-left: 480px;
+			}
+			.p18 p{
+				
+				margin-right: 150px;
+				display: block;
+				width: 1000px;
+				position: relative;
+				right: 250px;
+				margin-bottom: 100px;
+			}
+			.p12{
+				position: absolute;
+				top:300px;
+				
+			}

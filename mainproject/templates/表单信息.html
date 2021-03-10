@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+
+<link href="/static/css/style1.css" rel="stylesheet" type="text/css" media="all" />
+
+</head>
+<body>
+
+<div class="main">
+	<h1>云晖服务订单</h1>
+	<div class="agileinfo_main_grid">
+		<form action="#" method="post">
+			<div class="styled-input">
+				<input type="text" name="ProductName" placeholder="服务名称" required="" />
+				<span></span>
+			</div>
+			<div class="styled-input">
+				<select id="country" onChange="change_country(this.value)" class="frm-field required">
+					<option value="null">电话</option>
+					<option value="null">Brand1</option>
+					<option value="AX">Brand2</option>
+					<option value="AX">Brand3</option>
+				</select>
+				<span></span>
+			</div>
+			<div class="styled-input">
+				<input type="text" name="Phone Number" placeholder="家属电话" required="" />
+				<span></span>
+			</div>
+			
+			<div class="clear"></div>
+			
+			<div class="styled-input">
+				<input type="text" name="Username" placeholder="服务时间" required="" />
+				<span></span>
+			</div>
+			<div class="styled-input">
+				<input type="email" name="Email" placeholder="服务时长" required="" />
+				<span></span>
+			</div>
+			<div class="styled-input">
+				<input type="text" name="Address" placeholder="地址" required="" />
+				<span></span>
+			</div>
+			
+			<div class="clear"></div>
+		
+			<div class="w3agile_budget">
+				<h4>范围</h4>
+				<div>
+					<input name="Range" type="range" min="0" max="1000" data-rangeslider="" />
+					<output></output>
+					<div class="clear"></div>
+				</div>
+			</div>
+			
+			<div class="styled-input w3_styled_input_textarea">
+				<textarea name="Review" placeholder="填写备注" required=" "></textarea>
+				<span></span>
+			</div>
+			<input type="submit" value="提交" />
+		</form>
+	</div>
+</div>
+
+<script type="text/javascript" src="/static/js/rangeslider.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	var $document = $(document);
+	var selector = '[data-rangeslider]';
+	var $element = $(selector);
+	var textContent = ('textContent' in document) ? 'textContent': 'innerText';
+	function valueOutput(element) {
+		var value = element.value;
+		var output = element.parentNode.getElementsByTagName('output')[0] || element.parentNode.parentNode.getElementsByTagName('output')[0];
+		output[textContent] = value;
+	}
+	$document.on('input', 'input[type="range"], ' + selector,
+	function(e) {
+		valueOutput(e.target);
+	});
+	$document.on('click', '#js-example-disabled button[data-behaviour="toggle"]',
+	function(e) {
+		var $inputRange = $(selector, e.target.parentNode);
+		if ($inputRange[0].disabled) {
+			$inputRange.prop("disabled", false);
+		} else {
+			$inputRange.prop("disabled", true);
+		}
+		$inputRange.rangeslider('update');
+	});
+	$document.on('click', '#js-example-change-value button',
+	function(e) {
+		var $inputRange = $(selector, e.target.parentNode);
+		var value = $('input[type="number"]', e.target.parentNode)[0].value;
+		$inputRange.val(value).change();
+	});
+	$document.on('click', '#js-example-change-attributes button',
+	function(e) {
+		var $inputRange = $(selector, e.target.parentNode);
+		var attributes = {
+			min: $('input[name="min"]', e.target.parentNode)[0].value,
+			max: $('input[name="max"]', e.target.parentNode)[0].value,
+			step: $('input[name="step"]', e.target.parentNode)[0].value
+		};
+		$inputRange.attr(attributes);
+		$inputRange.rangeslider('update', true);
+	});
+	$document.on('click', '#js-example-destroy button[data-behaviour="destroy"]',
+	function(e) {
+		$(selector, e.target.parentNode).rangeslider('destroy');
+	}).on('click', '#js-example-destroy button[data-behaviour="initialize"]',
+	function(e) {
+		$(selector, e.target.parentNode).rangeslider({
+			polyfill: false
+		});
+	});
+	$document.on('click', '#js-example-hidden button[data-behaviour="toggle"]',
+	function(e) {
+		var $container = $(e.target.previousElementSibling);
+		$container.toggle();
+	});
+	$element.rangeslider({
+		polyfill: false,
+		onInit: function() {
+			valueOutput(this.$element[0]);
+		},
+		onSlide: function(position, value) {
+			console.log('onSlide');
+			console.log('position: ' + position, 'value: ' + value);
+		},
+		onSlideEnd: function(position, value) {
+			console.log('onSlideEnd');
+			console.log('position: ' + position, 'value: ' + value);
+		}
+	});
+});
+</script>
+
+<div style="text-align:center;margin:-50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+</div>
+</body>
+</html>
